@@ -27,7 +27,7 @@ import au.com.bytecode.opencsv.CSVReader;
 
 public class MainActivity extends AppCompatActivity {
 public static String TAG = "CSVPRINTERTAG";
-private Integer CSVindex;
+private Integer CSVindex; //Index of CSV list files
 public AssetManager AMger;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,6 @@ public AssetManager AMger;
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
